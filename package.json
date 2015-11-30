@@ -1,0 +1,24 @@
+{
+  "name": "react-jqueryui-accordion",
+  "version": "1.0.0",
+  "description": "A simple react component for jquery-ui's accordion ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accordion",
+    "react",
+    "jquery",
+    "jqueryui",
+    "jquery-ui"
+  ],
+  "author": "Ran Byron",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "jquery-ui": "^1.10.5",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
