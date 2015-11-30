@@ -1,18 +1,20 @@
-import React         from 'react';
-import {findDOMNode} from 'react-dom';
-import $             from 'jquery';
+var React    = require('react');
+var ReactDOM = require('react-dom');
+var $        = require('jquery');
 
 require('jquery-ui/accordion');
 
-var Accordion = React.createClass({
+module.exports = React.createClass({
   componentDidMount: function () {
-    var el = $(findDOMNode(this));
-    el.accordion((this.props.options || {}));
+    var el = ReactDOM.findDOMNode(this);
+    $(el).accordion((this.props.options || {}));
   },
 
   render: function () {
-    return <div role='accordion'>{this.props.children}</div>
+    return React.createElement(
+      'div',
+      { className: 'react-jqueryui-accordion' },
+      this.props.children
+    );
   }
 });
-
-export default Accordion;
