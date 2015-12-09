@@ -19,7 +19,7 @@ $ npm install --save react-jqueryui-accordion
 </Accordion>
 ```
 
-Pass options:
+Pass options (<a href="http://api.jqueryui.com/accordion/">docs</a>):
 
 ```jsx
 <Accordion options={{height: 'fill'}}>
@@ -29,4 +29,19 @@ Pass options:
   <div>Content</div>
 </Accordion>
 ```
-Options according to docs http://api.jqueryui.com/accordion/
+
+
+Select panel:
+
+```jsx
+<Accordion ref="accordion">
+  ...
+</Accordion>
+```
+
+```js
+// activate 3rd panel
+this.refs.accordion.active(2);
+
+```
+

@@ -6,8 +6,12 @@ require('jquery-ui/accordion');
 
 module.exports = React.createClass({
   componentDidMount: function () {
-    var el = ReactDOM.findDOMNode(this);
-    $(el).accordion((this.props.options || {}));
+    this.$el = $(ReactDOM.findDOMNode(this));
+    this.$el.accordion((this.props.options || {}));
+  },
+
+  active: function(index) {
+    this.$el.accordion('option', {active: index});
   },
 
   render: function () {
