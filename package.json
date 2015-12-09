@@ -1,6 +1,6 @@
 {
   "name": "react-jqueryui-accordion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple react component for jquery-ui's accordion",
   "main": "index.js",
   "scripts": {
