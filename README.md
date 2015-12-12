@@ -7,6 +7,7 @@
 ```sh
 $ npm install --save react-jqueryui-accordion
 ```
+from [https://npmjs.com/package/react-jqueryui-accordion]()
 
 ## Usage
 
@@ -45,7 +46,6 @@ var index = this.refs.accordion.active;
 
 // activate 3rd panel
 this.refs.accordion.active = 2;
-
 
 ```
 
