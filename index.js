@@ -7,13 +7,21 @@ require('jquery-ui/accordion');
 var Accordion = React.createClass({
 
   componentWillMount: function() {
-    // define 'active' getter and setter
+    // active index
     Object.defineProperty(this, 'active', {
       get: function() {
         return this.$el.accordion('option', 'active');
       },
       set: function(index) {
         this.$el.accordion('option', {active: index});
+      }
+    });
+
+    // activeHeader element
+    Object.defineProperty(this, 'activeHeader', {
+      get: function() {
+        var selector = this.$el.accordion('option', 'header');
+        return this.$el.find(selector)[this.active];
       }
     });
   },

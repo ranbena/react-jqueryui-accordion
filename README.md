@@ -11,7 +11,7 @@ from [https://npmjs.com/package/react-jqueryui-accordion]()
 
 ## Usage
 
-```jsx
+``` html
 <Accordion>
   <h1>Title 1</h1>
   <div>Content</div>
@@ -22,7 +22,7 @@ from [https://npmjs.com/package/react-jqueryui-accordion]()
 
 Pass options (<a href="http://api.jqueryui.com/accordion/">docs</a>):
 
-```jsx
+``` html
 <Accordion options={{height: 'fill'}}>
   <h1>Title 1</h1>
   <div>Content</div>
@@ -34,18 +34,25 @@ Pass options (<a href="http://api.jqueryui.com/accordion/">docs</a>):
 
 Select panel and interact with `active`:
 
-```jsx
+``` html
 <Accordion ref="accordion">
   ...
 </Accordion>
 ```
 
-```js
+``` js
 // get current active panel index
 var index = this.refs.accordion.active;
 
 // activate 3rd panel
 this.refs.accordion.active = 2;
+
+```
+
+Get currently active header element:
+
+``` js
+var headerElement = this.refs.accordion.activeHeader;
 
 ```
 
