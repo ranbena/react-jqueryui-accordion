@@ -31,7 +31,7 @@ Pass options (<a href="http://api.jqueryui.com/accordion/">docs</a>):
 ```
 
 
-Select panel:
+Select panel and interact with `active`:
 
 ```jsx
 <Accordion ref="accordion">
@@ -40,8 +40,12 @@ Select panel:
 ```
 
 ```js
+// get current active panel index
+var index = this.refs.accordion.active;
+
 // activate 3rd panel
-this.refs.accordion.active(2);
+this.refs.accordion.active = 2;
+
 
 ```
 
