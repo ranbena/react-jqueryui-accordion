@@ -2,7 +2,7 @@ var React    = require('react');
 var ReactDOM = require('react-dom');
 var $        = require('jquery');
 
-require('jquery-ui/accordion');
+require('jquery-ui/ui/widgets/accordion');
 
 var Accordion = React.createClass({
 
